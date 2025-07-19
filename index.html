@@ -36,26 +36,26 @@
 </head>
 <body>
 
-  <h1>Entrada Secreta</h1>
+  <h1>Digite o codigo:</h1>
 
   <div class="input-section">
-    <input type="text" id="senha1" placeholder="Digite a primeira senha" />
+    <input type="text" id="senha1" placeholder="" />
     <button onclick="verificarPrimeira()">Enviar</button>
   </div>
 
   <div id="mensagem">
-    <p><strong>Mensagem personalizada:</strong> Parabéns, você descobriu o primeiro segredo!</p>
+    <p><strong></strong> Parabéns, essa é a última parte do enigma do rogicocogames salame games, e você será merecedor dos temidos R$15,00! Porém ainda não acabou, eu preciso que você leve consigo a sua fiel amiga! Mas afinal, quem é sua fiel amiga? A sua fiel amiga te acompanhou durante todos os enigmas, e ela sempre esteve la contigo. Ela parece ser três pessoas, mas vai por mim, ela é uma só. Agora, digite a sua amiga na caixa de texto! 👍</p>
   </div>
 
   <div id="segundaSenha" class="input-section">
-    <input type="text" id="senha2" placeholder="Digite a próxima senha" />
+    <input type="text" id="senha2" placeholder="" />
     <button onclick="verificarSegunda()">Continuar</button>
   </div>
 
   <script>
     function verificarPrimeira() {
       const senha = document.getElementById("senha1").value.trim();
-      if (senha === "chave1") {
+      if (senha === "Betelgeuse") {
         document.getElementById("mensagem").style.display = "block";
         document.getElementById("segundaSenha").style.display = "block";
       } else {
@@ -67,7 +67,7 @@
 
     function verificarSegunda() {
       const senha = document.getElementById("senha2").value.trim();
-      if (senha === "chave2") {
+      if (senha === "...") {
         window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
       }
     }
