@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>...</title>
+</head>
+<body style="text-align:center; padding-top:100px; font-family:sans-serif;">
+  <h2>Digite o código:</h2>
+  <input id="codigo" placeholder="" />
+  <button onclick="verificar()">Entrar</button>
+  <p id="mensagem" style="color:red;"></p>
+
+  <script>
+    function verificar() {
+      const input = document.getElementById("codigo").value.trim();
+      if (input === "Betelgeuse") {
+        window.location.href = "https://youtu.be/MfSFcbFNAik?si=SKyHnEBx73CAqPbj"; // substitua pelo seu link
+      } else {
+        document.getElementById("mensagem").innerText = "...";
+      }
+    }
+  </script>
+</body>
+</html>
